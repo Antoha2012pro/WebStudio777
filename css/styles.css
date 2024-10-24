@@ -738,13 +738,13 @@ header > .container {
 
 .goods-item {
     flex-basis: calc((100% - 60px) / 3);
-    position: relative;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .goods-item:hover,.goods-item:focus{
     .goods-opacity{
         opacity: 1;
+        transform: translateY(-294px);
     }
 }
 
@@ -764,6 +764,11 @@ header > .container {
     outline: none;
 }
 
+.goods-wrraper {
+    position: relative;
+    overflow: hidden;
+}
+
 .goods-img {
     width: 100%;
 }
@@ -772,9 +777,10 @@ header > .container {
     background: rgba(33, 150, 243, 0.90);
     position: absolute;
     padding: 63px 24px;
-    top: 0;
-    left: 0;
-    opacity: 0;
+    top: 294px;
+    left: 0px;
+    transform: translateY(100%);
+    /* opacity: 0; */
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -826,6 +832,7 @@ header > .container {
     justify-content: center;
     align-items: center;
     opacity: 1;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
