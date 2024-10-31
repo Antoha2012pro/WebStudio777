@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -38,7 +42,7 @@
         <section class="decision">
             <div class="container">
             <h1 class="decision-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="decision-btn" data-modal-open>Замовити послугу</button>
+            <button type="button" class="decision-btn animate__animated animate__pulse" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!-- Ми -->
@@ -69,15 +73,21 @@
             <div class="container">
             <h2 class="make-title">Чим ми займаємося</h2>
             <ul class="make-items">
-                <li class="make-item">
+                <li class="make-item" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="200">
                     <img src="./img/computer.jpg" alt="Програмування" class="make-img">
                     <h2 class="make-text">Десктопні додатки</h2>
                 </li>
-                <li class="make-item">
+                <li class="make-item" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="200">
                     <img src="./img/laptop.jpg" alt="Вибирати дизайн сайту" class="make-img">
                     <h2 class="make-text">Мобільні додатки</h2>
                 </li>
-                <li class="make-item">
+                <li class="make-item" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="200">
                     <img src="./img/planshet.jpg" alt="Підбір кольорів на планшеті" class="make-img">
                     <h2 class="make-text">Дизайнерські рішення</h2>
                 </li>
@@ -397,5 +407,9 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
