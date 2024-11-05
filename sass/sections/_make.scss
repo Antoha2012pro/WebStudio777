@@ -1,0 +1,48 @@
+.make {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.make-title {
+    color: var(--color);
+    text-align: center;
+    font-size: 36px;    
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.make-items {
+    display: flex;
+    gap: 30px;
+}
+
+.make-item {
+    position: relative;
+}
+
+.make-img {
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+}
+
+.make-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.80);
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,90 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--background-color1);
+}
+
+.team-title {
+    color: var(--color);
+    text-align: center;
+    font-size: 36px;    
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.team-item {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    background-color: var(--title-color);
+    padding-bottom: 30px;
+}
+
+.box-team-item {
+    padding-top: 30px;
+    padding-bottom: 16px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.team-img {
+    width: 270px;
+    height: 260px;
+    flex-shrink: 0;
+}
+
+.team-heading {
+    color: var(--color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+}
+
+.team-text {
+    color: #757575;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    letter-spacing: 0.48px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-element-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+    background-color: var(--title-color);
+    border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-element-link:hover, .team-element-link:focus {
+    outline: none;
+    background-color: var(--accent-color);
+    .team-element-img{
+        fill: var(--title-color);
+    }
+}
+
+.team-element-img {
+    width: 20px;
+    height: 20px;
+    fill: var(--clients-border);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
