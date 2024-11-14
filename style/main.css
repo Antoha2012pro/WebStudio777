@@ -59,7 +59,11 @@ header > .container {
   display: flex;
 }
 
-.logo-header1 {
+.logo {
+  margin-right: 93px;
+}
+
+.logo-header-web {
   color: var(--accent-color);
   font-family: Raleway;
   font-size: 26px;
@@ -68,17 +72,13 @@ header > .container {
   letter-spacing: 0.78px;
 }
 
-.logo-header2 {
+.logo-header-studio {
   color: var(--logo-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
-}
-
-.logo {
-  margin-right: 93px;
 }
 
 .logo:focus {
